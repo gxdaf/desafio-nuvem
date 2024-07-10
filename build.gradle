@@ -27,11 +27,8 @@ dependencies {
 }
 
 bootJar {
-    manifest {
-        attributes(
-            'Main-Class': 'dio.bootcamp.api_nuvem.ApiNuvemApplication'
-        )
-    }
+    archiveFileName = 'api-nuvem-0.0.1-SNAPSHOT.jar'
+    enabled = true
 }
 
 tasks.named('test') {
