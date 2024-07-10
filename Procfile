@@ -1,1 +1,1 @@
-web: java -jar api-nuvem\build\libs\api-nuvem-0.0.1-SNAPSHOT.jar
+web: java -jar build/libs/api-nuvem-0.0.1-SNAPSHOT.jar
