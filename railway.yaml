@@ -1,7 +1,8 @@
 build:
   env:
-    TOOLCHAIN: java
-  plugins:
-    - id: 'railway/java'
-      spec:
-        java-version: 21
+    JAVA_HOME: "/usr/lib/jvm/java-21-openjdk-amd64"
+    PATH: "${JAVA_HOME}/bin:${PATH}"
+  prebuild:
+    - chmod +x gradlew
+  install:
+    - ./gradlew clean build -x check -x test
