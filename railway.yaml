@@ -1,0 +1,7 @@
+build:
+  env:
+    TOOLCHAIN: java
+  plugins:
+    - id: 'railway/java'
+      spec:
+        java-version: 21
